@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="netBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="netShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#netBgGrad)"/>
+
+  <!-- Subtle Network Grid -->
+  <g stroke="#334155" stroke-width="1" opacity="0.25">
+    <line x1="0" y1="75" x2="800" y2="75"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="225" x2="800" y2="225"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="160" y1="0" x2="160" y2="450"/>
+    <line x1="320" y1="0" x2="320" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+    <line x1="640" y1="0" x2="640" y2="450"/>
+  </g>
+
+  <!-- Title Badges -->
+  <g>
+    <rect x="50" y="24" width="170" height="24" rx="4" fill="#0284c7" opacity="0.9"/>
+    <text x="60" y="40" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">NETWORKING QUIZ APP</text>
+    <rect x="230" y="24" width="160" height="24" rx="4" fill="#10b981" opacity="0.9"/>
+    <text x="240" y="40" fill="#ffffff" font-family="monospace" font-size="11" font-weight="bold">DNS • HTTP • TCP/IP</text>
+  </g>
+
+  <!-- Left: Quiz Application Window -->
+  <g filter="url(#netShadow)">
+    <rect x="50" y="65" width="440" height="345" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 50 75 Q 50 65 60 65 L 480 65 Q 490 65 490 75 L 490 95 L 50 95 Z" fill="#0f172a"/>
+    <circle cx="70" cy="80" r="4" fill="#ef4444"/>
+    <circle cx="85" cy="80" r="4" fill="#f59e0b"/>
+    <circle cx="100" cy="80" r="4" fill="#10b981"/>
+    <text x="120" y="84" fill="#94a3b8" font-family="monospace" font-size="10">Networking Knowledge Evaluator v1.0</text>
+
+    <!-- Question Badge & Counter -->
+    <rect x="70" y="112" width="70" height="18" rx="4" fill="#2563eb"/>
+    <text x="78" y="125" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">QUESTION 4</text>
+    <text x="410" y="125" fill="#38bdf8" font-family="monospace" font-size="11">Score: 3/3</text>
+
+    <!-- Question Text -->
+    <text x="70" y="152" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="bold">
+      Which protocol resolves domain names into IP addresses?
+    </text>
+
+    <!-- Quiz Options -->
+    <!-- Option A -->
+    <rect x="70" y="172" width="400" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <circle cx="90" cy="191" r="9" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <text x="86" y="195" fill="#94a3b8" font-family="monospace" font-size="10">A</text>
+    <text x="110" y="195" fill="#cbd5e1" font-family="monospace" font-size="12">DHCP (Dynamic Host Config)</text>
+
+    <!-- Option B (Selected / Correct) -->
+    <rect x="70" y="218" width="400" height="38" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="90" cy="237" r="9" fill="#10b981"/>
+    <text x="86" y="241" fill="#ffffff" font-family="monospace" font-size="10" font-weight="bold">B</text>
+    <text x="110" y="241" fill="#ffffff" font-family="monospace" font-size="12" font-weight="bold">DNS (Domain Name System)</text>
+    <path d="M 445 237 L 452 244 L 463 231" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Option C -->
+    <rect x="70" y="264" width="400" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <circle cx="90" cy="283" r="9" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <text x="86" y="287" fill="#94a3b8" font-family="monospace" font-size="10">C</text>
+    <text x="110" y="287" fill="#cbd5e1" font-family="monospace" font-size="12">ARP (Address Resolution)</text>
+
+    <!-- Option D -->
+    <rect x="70" y="310" width="400" height="38" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <circle cx="90" cy="329" r="9" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+    <text x="86" y="333" fill="#94a3b8" font-family="monospace" font-size="10">D</text>
+    <text x="110" y="333" fill="#cbd5e1" font-family="monospace" font-size="12">HTTP/2 (Hypertext Transfer)</text>
+
+    <!-- Quiz Action Button -->
+    <rect x="70" y="360" width="130" height="30" rx="5" fill="#2563eb"/>
+    <text x="95" y="379" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold">Next Question &rarr;</text>
+  </g>
+
+  <!-- Right: OSI/TCP Stack & Network Diagram -->
+  <g filter="url(#netShadow)">
+    <rect x="515" y="65" width="245" height="345" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="515" y="65" width="245" height="30" rx="10" fill="#0f172a"/>
+    <text x="535" y="85" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">TCP/IP Protocol Stack</text>
+
+    <!-- Layer Blocks -->
+    <!-- Application Layer -->
+    <rect x="530" y="110" width="215" height="48" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="545" y="130" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold">Application Layer</text>
+    <text x="545" y="146" fill="#94a3b8" font-family="monospace" font-size="9">HTTP • DNS • SMTP • FTP</text>
+
+    <!-- Transport Layer -->
+    <rect x="530" y="166" width="215" height="48" rx="6" fill="#0f172a" stroke="#818cf8" stroke-width="1"/>
+    <text x="545" y="186" fill="#818cf8" font-family="monospace" font-size="11" font-weight="bold">Transport Layer</text>
+    <text x="545" y="202" fill="#94a3b8" font-family="monospace" font-size="9">TCP (Reliable) • UDP</text>
+
+    <!-- Internet Layer -->
+    <rect x="530" y="222" width="215" height="48" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="1"/>
+    <text x="545" y="242" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">Internet Layer</text>
+    <text x="545" y="258" fill="#94a3b8" font-family="monospace" font-size="9">IPv4 • IPv6 • ICMP • Routing</text>
+
+    <!-- Link Layer -->
+    <rect x="530" y="278" width="215" height="48" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="545" y="298" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="bold">Network Access Layer</text>
+    <text x="545" y="314" fill="#94a3b8" font-family="monospace" font-size="9">Ethernet • Wi-Fi (802.11) • MAC</text>
+
+    <!-- Live Packet Animation Graphic -->
+    <rect x="530" y="340" width="215" height="52" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+    <circle cx="550" cy="366" r="10" fill="#2563eb"/>
+    <text x="546" y="370" fill="#ffffff" font-family="monospace" font-size="10">Cli</text>
+
+    <line x1="565" y1="366" x2="685" y2="366" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+    <circle cx="700" cy="366" r="10" fill="#059669"/>
+    <text x="696" y="370" fill="#ffffff" font-family="monospace" font-size="10">Srv</text>
+
+    <text x="590" y="358" fill="#38bdf8" font-family="monospace" font-size="9">SYN-ACK 3-Way</text>
+  </g>
+</svg>
